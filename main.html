@@ -1,19 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-   
-    <p id="curso">AAA</p>
-     <div class="barra-preta">
-        <p class="Herbert"><img class="imagemloja" src="C:\Users\Herbert\Pictures\Vieirastore.jpg"></p>
+<html lang="pt-BR">
 
-     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vieira1Store</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="barra-superior">
+        <img class="PrincipalImageTop" src="C:\Users\Herbert\Pictures\Vieirastore.jpg">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Pesquisar...">
+            <button class="search-button">&#128269;</button>
+        </div>
+    </div>
+
+    <div class="barra-lateral" id="barraLateral"></div>
+
+    <div class="Classe01"<h1>Destaques</h1></div>
+    
+    <img class="ImagemDestaques01" src="C:\Users\Herbert\Pictures\Imagem1.png">
+    <div class="TextoImagemDestaque01"<h1>"Computação quântica terá o mesmo impacto que Inteligência artificial nos negócios", diz executivo do banco BV.</h3></div>
+        <div class="SubTextoImagemDestaque01"<h2>Em parceria com Senai-Cimatec, o banco BV avança em testes de computação quântica para solucionar problemas que são complexos para a computação clássica.</h3></div>
+            <div class="SubTexto2ImagemDestaque01"<h3>Há 16 horas</h3></div>
+
+    <img class="ImagemDestaques02" src="C:\Users\Herbert\Pictures\Imagem2.png">
+    <div class="TextoImagemDestaque02"<h3>Brasil está virando referência mundial e Drex é só a ponta do iceberg, diz executivo da Microsoft.</h3></div>
+            <div class="SubTextoImagemDestaque02"<h3>Há 5 horas</h3></div>
+
+    <img class="ImagemDestaques03" src="C:\Users\Herbert\Pictures\Imagem3.png">
+    <div class="TextoImagemDestaque03"<h3>Como formar novos líderes na área de tecnologia?</h3></div>
+            <div class="SubTextoImagemDestaque03"<h3>Há 11 horas</h3></div>
+
+    <img class="ImagemDestaques04" src="C:\Users\Herbert\Pictures\Imagem4.png">
+    <div class="TextoImagemDestaque04"<h3>Como a tecnologia, a inovação e novas políticas monetárias globais transformam o mercado de câmbio.</h3></div>
+            <div class="SubTextoImagemDestaque04"<h3>Há 14 horas</h3></div>
+
+    <img class="ImagemDestaques05" src="C:\Users\Herbert\Pictures\Imagem5.png">
+    <div class="TextoImagemDestaque05"<h3>Em FIDC, aplicação reduz tempo de processamento de recebíveis de uma hora para 3 minutos.</h3></div>
+            <div class="SubTextoImagemDestaque05"<h3>Há 19 horas</h3></div>
+
+
+
+    <div class="MaisLidas"<h3>Mais lidas da semana</h3></div>
+        <div class="NumeroTopico1"<h3>1</h3></div>
+            <div class="TopicoMensagem1"<h3>Educação sobre blockchain</h3></div>
+
+        <div class="NumeroTopico2"<h3>2</h3></div>
+            <div class="TopicoMensagem2"<h3>A hora e a vez das nuvens</h3></div>
+
+        <div class="NumeroTopico3"<h3>3</h3></div>
+            <div class="TopicoMensagem3"<h3>Educação sobre blockchain</h3></div>
+
+        <div class="NumeroTopico4"<h3>4</h3></div>
+            <div class="TopicoMensagem4"<h3>Maestro robô conduz orquestra na Coreia do Sul</h3></div>
+
+        <div class="NumeroTopico5"<h3>5</h3></div>
+            <div class="TopicoMensagem5"<h3>Qual é a real importância da cibersegurança?</h3></div>
+
+
+
+    <script>
+        function toggleMenu() {
+            var barraLateral = document.getElementById("barraLateral");
+            barraLateral.classList.toggle("expandido");
+        }
+    </script>
+
 </body>
+
 </html>

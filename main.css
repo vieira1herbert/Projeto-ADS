@@ -1,22 +1,517 @@
-.Herbert {
+.caixapesquisa {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    gap: 12px;
+
     position: absolute;
-    top: 70%;
+    width: 243px;
+    height: 33px;
+    left: 830px;
+    top: 14px;
+
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+
+}
+
+.barra-superior {
+
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+
+    background-color: #1E1E1E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    z-index: 50;
+
+}
+
+.barra-superior p {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+}
+
+.PrincipalImageTop {
+    position: absolute;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5px;
-    text-shadow: 200%;
-    box-shadow: #000;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border: 3px solid white
 }
-.imagemloja{
+
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 50px;
-    right: 50px;
+    background-color: #2f2f2f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;
 }
-.barra-preta {
-background-color: #40969c;
-height: 80px; 
-width: 100%; 
-position: fixed; 
-top: 0;
-left: 0;
-z-index: 1000; 
+
+.barra-superior .menu-toggle {
+    cursor: pointer;
+}
+
+.barra-lateral {
+    position: fixed;
+    top: 50px;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: #a0a0a0;
+    transition: left 0.5s;
+}
+
+.barra-lateral.expandido {
+    left: 0;
+}
+
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Classe01 {
+    position: absolute;
+    width: 179px;
+    height: 51px;
+    left: 217px;
+    top: 91px;
+
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ImagemDestaques01 {
+    position: absolute;
+    width: 399px;
+    height: 285px;
+    left: 217px;
+    top: 147px;
+}
+
+.ImagemDestaques02 {
+    position: absolute;
+    width: 245px;
+    height: 163px;
+    left: 687px;
+    top: 147px;
+}
+
+.ImagemDestaques03 {
+    position: absolute;
+    width: 245px;
+    height: 163px;
+    left: 978px;
+    top: 147px;
+}
+
+.ImagemDestaques04 {
+    position: absolute;
+    width: 245px;
+    height: 163px;
+    left: 687px;
+    top: 447px;
+}
+
+.ImagemDestaques05 {
+    position: absolute;
+    width: 245px;
+    height: 163px;
+    left: 978px;
+    top: 447px;
+}
+
+.TextoImagemDestaque01 {
+    position: absolute;
+    width: 399px;
+    height: 60px;
+    left: 217px;
+    top: 441px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.SubTextoImagemDestaque01 {
+    position: absolute;
+    width: 403px;
+    height: 72px;
+    left: 217px;
+    top: 517px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+
+    color: #000000;
+}
+
+.SubTexto2ImagemDestaque01 {
+    position: absolute;
+    width: 125px;
+    height: 19px;
+    left: 217px;
+    top: 594px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 24px;
+    color: #777777;
+}
+
+.TextoImagemDestaque02 {
+    position: absolute;
+    width: 245px;
+    height: 61px;
+    left: 686px;
+    top: 318px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+
+    color: #000000;
+}
+
+.SubTextoImagemDestaque02 {
+    position: absolute;
+    width: 125px;
+    height: 19px;
+    left: 687px;
+    top: 369px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 24px;
+
+    color: #777777;
+}
+
+.TextoImagemDestaque03 {
+    position: absolute;
+    width: 245px;
+    height: 44px;
+    left: 978px;
+    top: 318px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+
+    color: #000000;
+}
+
+.SubTextoImagemDestaque03 {
+    position: absolute;
+    width: 125px;
+    height: 19px;
+    left: 978px;
+    top: 369px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 24px;
+
+    color: #777777;
+}
+
+.TextoImagemDestaque04 {
+    position: absolute;
+    width: 245px;
+    height: 46px;
+    left: 687px;
+    top: 617px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+
+    color: #000000;
+}
+
+.SubTextoImagemDestaque04 {
+    position: absolute;
+    width: 125px;
+    height: 19px;
+    left: 687px;
+    top: 669px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 24px;
+
+    color: #777777;
+}
+
+.TextoImagemDestaque05 {
+    position: absolute;
+    width: 245px;
+    height: 45px;
+    left: 978px;
+    top: 617px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+
+    color: #000000;
+}
+
+.SubTextoImagemDestaque05 {
+    position: absolute;
+    width: 125px;
+    height: 19px;
+    left: 978px;
+    top: 672px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 24px;
+
+    color: #777777;
+}
+
+.MaisLidas {
+    position: absolute;
+    width: 215px;
+    height: 23px;
+    left: 217px;
+    top: 720px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.NumeroTopico1 {
+    position: absolute;
+    width: 16px;
+    height: 50px;
+    left: 217px;
+    top: 765px;
+
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.TopicoMensagem1 {
+    position: absolute;
+    width: 199px;
+    height: 18px;
+    left: 251px;
+    top: 780px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.NumeroTopico2 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 217px;
+    top: 817px;
+
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.TopicoMensagem2 {
+    position: absolute;
+    width: 199px;
+    height: 18px;
+    left: 251px;
+    top: 830px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.NumeroTopico3 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 217px;
+    top: 867px;
+
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.TopicoMensagem3 {
+    position: absolute;
+    width: 199px;
+    height: 18px;
+    left: 251px;
+    top: 880px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.NumeroTopico4 {
+    position: absolute;
+    width: 18px;
+    height: 50px;
+    left: 217px;
+    top: 917px;
+
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.TopicoMensagem4 {
+    position: absolute;
+    width: 218px;
+    height: 18px;
+    left: 251px;
+    top: 922px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.NumeroTopico5 {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    left: 217px;
+    top: 967px;
+
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.TopicoMensagem5 {
+    position: absolute;
+    width: 199px;
+    height: 18px;
+    left: 251px;
+    top: 973px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+
+body {
+    overflow-y: scroll;
 }
